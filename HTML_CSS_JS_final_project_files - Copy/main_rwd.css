@@ -1,0 +1,369 @@
+ body {
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    width: 95%;
+    background-color: white;
+    background-image: url("C:\Users\coope\OneDrive\Desktop\MTC HTML CSS JAVASCRIPT COURSE\HTML_CSS_JS_final_project_files\HTML_CSS_JS_final_project_files\images\bats.gif");
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    border: 0.2em solid black;
+    box-shadow: 2px 2px 10px black;
+    font-size: 100%;
+    font-family:sans-serif;
+}   
+#section{
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+    width: 100%;
+}
+.sidebarA {
+    float: left;
+    width: 25%;
+    width: 10em;
+    margin: 0;
+    padding: 1.5625em 1.5625em 0 0;
+}
+.columnB{
+    float: right;
+    width: 75%;
+    margin: 0;
+    padding: 1.5625em 0 0 1.5625em;
+}
+#pumpkin{
+    padding-left: 0.625em;
+    padding-top: 0.625em;
+    float: left;
+    width: 60%;
+    height: 60%;
+    min-width: 40px;
+    max-width: 5em;
+}
+#cat1 a{
+    text-decoration: none;
+}
+#cat{
+    margin: 0.625em 0 0.625em 0;
+    padding: 0;
+    max-width: 154px;
+    max-height: 122px;
+    text-decoration: none;
+}
+#catimg{
+    color: orange;
+}
+#catimg :visited{
+    color: orange;
+}
+header{
+    background: linear-gradient(45deg, white, orange 75%, black);
+    width: 100%;
+    height: 100%;
+    margin: 0 0 -1em 0;
+    padding: 0 0 0.625em 0;
+    border: 2px solid black;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.9375em 0 0.9375em 0;
+    text-indent: 1em;
+   /* color: orange; */
+   /* text-shadow: 2px 2px 1px black; */
+}
+h2{
+    font-size: 1.1em;
+    margin: 0 0.625em 0.625em 0;
+    padding: 0;
+    text-indent: 2em;
+}
+h3 {
+    font-size: 1.5em;
+    font-weight:bold;
+    margin: 0;
+    padding: 0;
+}
+h3::first-letter{
+    font-size: 200%;
+}
+/*ul{
+     align-self:center;
+    float: left;
+}*/
+h4{
+    font-size: 1.25em;
+    margin: 0;
+    padding:0;
+}
+h5{
+    font-size: 1em;
+    margin: 0;
+    padding: 0.625em 0 0.625em 0;
+}
+p{
+    font-size: 1.1em;
+    margin: 0.625em 0 0.625em 0 ;
+}
+nav{
+    background-color: black;
+    margin:0;
+    padding: 0 0 0.3125em 0;
+
+}
+#nav_menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+ 
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+#nav_menu ul li {float:left;}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    max-width: 6.25em;
+    background-color: black;
+
+}
+#nav_menu ul ul li {float: none;}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+#nav_menu a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+a:active{
+    color: orange;
+    text-decoration: none;
+}
+#nav_menu li a:hover{
+color:orange;
+background-color: gray;
+}
+
+#left-nav{
+    list-style: none;
+}
+#left-nav li {
+    margin: 0 0 0.3125em 0;
+    font-size: 1em;
+    width: 100%;
+   
+    background-color: orange;
+    border: 1px solid black;
+}
+
+#left-nav a {
+    
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    
+    
+}
+#left-nav a:visited {
+    color: orange;
+    font-weight: bold
+}
+#left-nav a:hover{
+    color:green;
+}
+#left-nav ul li {
+    line-height: 1.25em;
+}
+
+
+footer{
+    border-top: 2px solid black;
+    font-size: 80%;
+    text-align: center;
+    clear: both;
+    background: linear-gradient(45deg, black, orange 75%, white);
+    margin: 0.625em 0 0 0;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+}
+
+/* 
+I definetly need to review this :D 
+*/
+@media only screen and (max-width: 800px) {
+    body{
+        background-image: none;
+        font-size: 90%;
+        box-shadow: none;
+    }
+}
+@media (max-width: 479px) {
+h1 h2 h3 {
+    font-size: 1em;
+}
+body{
+background-color: blue;
+}
+#nav_menu {display: none;}
+#mobile_menu {display: block;}
+}
+
+.slicknav_menu { background-color: #facd8a !important; }
+#mobile_menu { display: none; }
+@media only screen and (max-width: 667px) {
+   #mobile_menu {display: block;}
+   #nav_menu {display: none;}
+   .slicknav_btn {
+       position: relative;
+       display: block;
+       vertical-align: middle;
+       float: right;
+       padding: 0.438em 0.625em 0.438em 0.625em;
+       line-height: 1.125em;
+       cursor: pointer;
+   }
+   .slicknav_menu .slicknav_menutxt {
+       display: block;
+       line-height: 1.188em;
+       float: left;
+   }
+   .slicknav_menu .slicknav_icon {
+       float: left;
+       margin: 0.188em 0 0 0.438em;
+   }
+   .slicknav_menu .slicknav_no-text {
+       margin: 0
+   }
+   .slicknav_menu .slicknav_icon-bar {
+       display: block;
+       width: 1.125em;
+       height: 0.125em;
+       -webkit-border-radius: 1px;
+       -moz-border-radius: 1px;
+       border-radius: 1px;
+       -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+       -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+   }
+   .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+       margin-top: 0.188em
+   }
+   .slicknav_nav {
+       clear: both
+   }
+   .slicknav_nav ul, .slicknav_nav li {
+       display: block
+   }
+   .slicknav_nav .slicknav_arrow {
+       font-size: 0.8em;
+       margin: 0 0 0 0.4em;
+   }
+   .slicknav_nav .slicknav_item {
+       display: block;
+       cursor: pointer;
+   }
+   .slicknav_nav a {
+       display: block
+   }
+   .slicknav_nav .slicknav_item a {
+       display: inline
+   }
+   .slicknav_menu:before, .slicknav_menu:after {
+       content: " ";
+       display: table;
+   }
+   .slicknav_menu:after {
+       clear: both
+   }
+   /* IE6/7 support */
+   .slicknav_menu {
+   *zoom: 1
+   }
+   /* 
+       User Default Style
+       Change the following styles to modify the appearance of the menu.
+   */
+   
+   .slicknav_menu {
+       font-size: 16px;
+   }
+   /* Button */
+   .slicknav_btn {
+       margin: 5px 5px 6px;
+       text-decoration: none;
+       text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+       -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+       border-radius: 4px;
+       background-color: #222222;
+   }
+   /* Button Text */
+   .slicknav_menu .slicknav_menutxt {
+       color: #FFF;
+       font-weight: bold;
+       text-shadow: 0 1px 3px #000;
+   }
+   /* Button Lines */
+   .slicknav_menu .slicknav_icon-bar {
+       background-color: #f5f5f5;
+   }
+   .slicknav_menu {
+       background: #4c4c4c;
+       padding: 5px;
+   }
+   .slicknav_nav {
+       color: #fff;
+       margin: 0;
+       padding: 0;
+       font-size: 0.875em;
+   }
+   .slicknav_nav, .slicknav_nav ul {
+       list-style: none;
+       overflow: hidden;
+   }
+   .slicknav_nav ul {
+       padding: 0;
+       margin: 0 0 0 20px;
+   }
+   .slicknav_nav .slicknav_item {
+       padding: 5px 10px;
+       margin: 2px 5px;
+   }
+   .slicknav_nav a {
+       padding: 5px 10px;
+       margin: 2px 5px;
+       text-decoration: none;
+       color: #fff;
+   }
+   .slicknav_nav .slicknav_item a {
+       padding: 0;
+       margin: 0;
+   }
+   .slicknav_nav .slicknav_item:hover {
+       -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+       border-radius: 6px;
+       background: #ccc;
+       color: #fff;
+   }
+   .slicknav_nav a:hover {
+       -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+       border-radius: 6px;
+       background: #ccc;
+       color: #222;
+   }
+   .slicknav_nav .slicknav_txtnode {
+       margin-left: 15px;
+   }
+   
+}
